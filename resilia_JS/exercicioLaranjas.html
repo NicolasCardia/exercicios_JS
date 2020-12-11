@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divide Laranjas</title>
+</head>
+<body>
+  <script>
+    
+    function mostrasFrase(frase){
+      document.write(frase)
+    }
+
+    function pulaLinha(){
+      document.write("<br>");
+    }
+    
+    var Laranjas = prompt("Há quantas laranjas?" );
+    var pessoas = prompt("A divisão será entre quantas pessoas?");
+
+    function divideLaranjas(quantidadesLaranjas, quantidadesPessoas){
+      return Laranjas / pessoas // Já esta pegando o resultado do prompt direto 
+    }
+
+    mostrasFrase(" você precisa dar " + divideLaranjas() + " laranjas para cada pessoa");
+
+    function sobraLaranjas(quantidadeLaranjas, quantidadePessoas){
+      return Laranjas % pessoas // A % significa pegar o resto da divisão
+    }
+
+    pulaLinha();
+    mostrasFrase(" E para o Joselito sobrou " + sobraLaranjas() + " laranjas");
+
+
+
+    
+
+  </script>
+  
+</body>
+</html>
