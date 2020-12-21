@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra De Cesar</title>
+</head>
+<body>
+    <script>
+     var meuArray = [];
+var mensagemUser = prompt('digite sua mensagem.');
+var deslocamentoUser = parseInt(prompt('Quantas casas quer avançar.'));
+
+function decrepitar(mensagem, deslocamento) {
+    
+    for (var i = 0; i < mensagem.length; i++) {
+        meuArray.push(mensagem[i].charCodeAt(0) + deslocamento);
+        console.log(String.fromCharCode(meuArray[i]));
+    }
+}
+
+decrepitar(mensagemUser, deslocamentoUser);
+        
+
+    </script>
+</body>
+</html>
